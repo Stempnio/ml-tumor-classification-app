@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "747D2AC3-8748-49F0-9CDC-265B2755496F": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "B71F1D19-58D4-47C8-8640-A4A65F0DC0F9": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "TumorClassifierModel.mlmodel",
+            "path": "com.apple.CoreML/TumorClassifierModel.mlmodel"
+        },
+        "EB540016-76A0-4A4F-AC98-201258768A65": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        }
+    },
+    "rootModelIdentifier": "B71F1D19-58D4-47C8-8640-A4A65F0DC0F9"
+}

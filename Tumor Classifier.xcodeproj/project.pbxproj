@@ -13,17 +13,19 @@
 		63304A08284CF61E00B579EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63304A06284CF61E00B579EE /* Main.storyboard */; };
 		63304A0A284CF62000B579EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63304A09284CF62000B579EE /* Assets.xcassets */; };
 		63304A0D284CF62000B579EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63304A0B284CF62000B579EE /* LaunchScreen.storyboard */; };
+		63304A1B284CFF9400B579EE /* TumorClassifierModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 63304A1A284CFF9400B579EE /* TumorClassifierModel.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		633049FD284CF61E00B579EE /* Tumor Classifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tumor Classifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63304A00284CF61E00B579EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63304A02284CF61E00B579EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63304A04284CF61E00B579EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63304A04284CF61E00B579EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		63304A07284CF61E00B579EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63304A09284CF62000B579EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63304A0C284CF62000B579EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63304A0E284CF62000B579EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63304A1A284CFF9400B579EE /* TumorClassifierModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = TumorClassifierModel.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				63304A02284CF61E00B579EE /* SceneDelegate.swift */,
 				63304A04284CF61E00B579EE /* ViewController.swift */,
 				63304A06284CF61E00B579EE /* Main.storyboard */,
+				63304A1A284CFF9400B579EE /* TumorClassifierModel.mlpackage */,
 				63304A09284CF62000B579EE /* Assets.xcassets */,
 				63304A0B284CF62000B579EE /* LaunchScreen.storyboard */,
 				63304A0E284CF62000B579EE /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63304A05284CF61E00B579EE /* ViewController.swift in Sources */,
+				63304A1B284CFF9400B579EE /* TumorClassifierModel.mlpackage in Sources */,
 				63304A01284CF61E00B579EE /* AppDelegate.swift in Sources */,
 				63304A03284CF61E00B579EE /* SceneDelegate.swift in Sources */,
 			);

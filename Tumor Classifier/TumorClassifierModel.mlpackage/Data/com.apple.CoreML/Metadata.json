@@ -1,0 +1,10 @@
+{
+  "MLModelVersionStringKey" : "--",
+  "MLModelDescriptionKey" : "Tumor classifier made using Keras ",
+  "MLModelCreatorDefinedKey" : {
+    "com.github.apple.coremltools.version" : "5.2.0",
+    "com.github.apple.coremltools.source" : "tensorflow==2.7.0"
+  },
+  "MLModelAuthorKey" : "Jakub Stępień",
+  "MLModelLicenseKey" : "--"
+}
