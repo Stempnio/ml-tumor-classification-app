@@ -16,7 +16,36 @@ class ViewController: UIViewController {
 		presentPhotoPicker(sourceType: .photoLibrary)
 	}
 	
-	@IBOutlet var ImageViewOutlet: UIImageView!
+    @IBOutlet var TextFieldURL: UITextField!
+    @IBAction func PickPhotoFromURL(_ sender: UIButton) {
+        view.backgroundColor = .white
+        
+		
+		guard let url = TextFieldURL.text else {
+			PredictionLabel.text = "Invalid URL!"
+			return
+		}
+		
+		guard let url = URL(string: url) else {
+			PredictionLabel.text = "Invalid URL!"
+			return
+		}
+
+        if let data = try? Data(contentsOf: url) {
+			guard let image = UIImage(data: data) else {
+				PredictionLabel.text = "Error while downloading picture from the URL!"
+				return
+			}
+			ImageViewOutlet.image = image
+			classify(image: image)
+        } else {
+			PredictionLabel.text = "Error while downloading picture from the URL!"
+			return
+        }
+    }
+    
+    
+    @IBOutlet var ImageViewOutlet: UIImageView!
 	
 	@IBOutlet var PredictionLabel: UILabel!
 	
@@ -25,6 +54,8 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .darkGray
+		
+		
 	}
 	
 	func presentPhotoPicker(sourceType: UIImagePickerController.SourceType) {

@@ -28,14 +28,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phot" translatesAutoresizingMaskIntoConstraints="NO" id="kaw-k6-6FL">
-                                <rect key="frame" x="87" y="302" width="240" height="350"/>
+                                <rect key="frame" x="87" y="234" width="240" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="kCX-6b-5M6"/>
                                     <constraint firstAttribute="height" constant="350" id="qaC-Is-17Q"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose photo to see predictions" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-w7-gvw">
-                                <rect key="frame" x="107" y="144" width="200" height="150"/>
+                                <rect key="frame" x="107" y="74" width="200" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="QZM-0H-5v7"/>
                                     <constraint firstAttribute="width" constant="200" id="mn8-zx-efD"/>
@@ -44,21 +44,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vi7-pd-E2Q">
+                                <rect key="frame" x="82" y="626" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="cWv-0l-hq2"/>
+                                    <constraint firstAttribute="width" constant="250" id="pvt-2w-GgR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ6-OG-Ml7">
+                                <rect key="frame" x="130.5" y="671" width="153" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Download from URL"/>
+                                <connections>
+                                    <action selector="PickPhotoFromURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXI-7c-V7Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kaw-k6-6FL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BHC-7r-cQD"/>
+                            <constraint firstItem="SZ6-OG-Ml7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0I8-67-7XL"/>
+                            <constraint firstItem="kaw-k6-6FL" firstAttribute="top" secondItem="wZa-w7-gvw" secondAttribute="bottom" constant="10" id="4os-DF-9lB"/>
+                            <constraint firstItem="SZ6-OG-Ml7" firstAttribute="top" secondItem="vi7-pd-E2Q" secondAttribute="bottom" constant="10" id="5n0-zA-iZN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="quV-Kg-c5z" secondAttribute="bottom" constant="40" id="Ctg-AB-zOb"/>
                             <constraint firstItem="wZa-w7-gvw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IB1-tD-fid"/>
                             <constraint firstItem="quV-Kg-c5z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MXb-f5-h2T"/>
-                            <constraint firstItem="wZa-w7-gvw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="RO4-N8-qVr"/>
-                            <constraint firstItem="quV-Kg-c5z" firstAttribute="top" secondItem="kaw-k6-6FL" secondAttribute="bottom" constant="70" id="xTK-FE-Aro"/>
+                            <constraint firstItem="wZa-w7-gvw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="RO4-N8-qVr"/>
+                            <constraint firstItem="quV-Kg-c5z" firstAttribute="top" secondItem="SZ6-OG-Ml7" secondAttribute="bottom" constant="20" id="Zhh-jg-iM7"/>
+                            <constraint firstItem="vi7-pd-E2Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bdj-N9-lov"/>
+                            <constraint firstItem="kaw-k6-6FL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbz-qi-8xY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ImageViewOutlet" destination="kaw-k6-6FL" id="9WO-vA-XxC"/>
                         <outlet property="PredictionLabel" destination="wZa-w7-gvw" id="lot-YI-MBz"/>
+                        <outlet property="TextFieldURL" destination="vi7-pd-E2Q" id="1aT-dE-vKc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
